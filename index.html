@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body class="page">
+    <main class="content">
+      <section class="timer">
+        <h2>Таймер</h2>
+        <div class="timer__set">
+          <label for="minutes"
+            >Минуты
+            <select id="minutes"></select>
+          </label>
+          <label for="seconds"
+            >Секунды
+            <select id="seconds"></select>
+          </label>
+        </div>
+        <div class="buttons">
+          <button class="timer__button" id="timer">Старт</button>
+          <button class="timer__button" id="stop">Стоп</button>
+        </div>
+        <div class="timer__anim">
+          <p class="timer__counter" id="counter">
+            <span id="tens-min">0</span><span id="min">0</span>:<span
+              id="tens-sec"
+              >0</span
+            ><span id="sec">0</span>
+          </p>
+          <svg class="progress-ring" width="120" height="120">
+            <circle
+              class="progress-ring__circle"
+              stroke="#005bb5"
+              stroke-width="4"
+              cx="60"
+              cy="60"
+              r="52"
+              fill="transparent"
+            />
+          </svg>
+        </div>
+      </section>
+    </main>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
